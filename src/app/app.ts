@@ -16,10 +16,10 @@ interface Producto {
 })
 export class App {
   // Propiedades de la tienda
-  nombreTienda: string = 'CompuMundo';
-  encargado: string = 'Tu Nombre';
+  nombreTienda: string = 'Dragonet';
+  encargado: string = 'Gonchisam';
   numeroSucursal: number = 1;
-  tiendaAbierta: boolean = false;
+  tiendaAbierta: boolean = true;
   categorias: string[] = ['Laptops', 'PCs de escritorio', 'Accesorios'];
 
   // Objeto que cumple la interfaz Producto
