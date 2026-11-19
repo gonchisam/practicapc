@@ -1,0 +1,28 @@
+<div style="padding: 20px; font-family: Arial;">
+  <h1>{{ nombreTienda }}</h1>
+  <p>Encargado: {{ encargado }} | Sucursal #{{ numeroSucursal }}</p>
+
+  @if (tiendaAbierta) {
+    <p style="color: green;">Tienda abierta</p>
+  } @else {
+    <p style="color: red;">Tienda cerrada</p>
+  }
+
+  <h3>Categorías:</h3>
+  <ul>
+    @for (cat of categorias; track cat) {
+      <li>{{ cat }}</li>
+    }
+  </ul>
+
+  <hr>
+
+  <h2>Producto: {{ producto.nombre }}</h2>
+  <p>Precio: ${{ producto.precio }}</p>
+
+  @if (producto.disponible) {
+    <p style="color: green;">Producto disponible</p>
+  } @else {
+    <p style="color: red;">Producto agotado</p>
+  }
+</div>
